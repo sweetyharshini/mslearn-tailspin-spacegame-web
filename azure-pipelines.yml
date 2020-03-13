@@ -55,11 +55,11 @@ steps:
      arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)' 
      zipAfterPublish: true
 
-  - template: templates/build.yml
+  - template: templates/Build.yml
     parameters:
       buildConfiguration: 'Debug'
    
-  - template: templates/build.yml
+  - template: templates/Build.yml
     parameters:
       buildConfiguration: 'Release'
 
